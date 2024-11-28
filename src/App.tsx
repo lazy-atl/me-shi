@@ -1,5 +1,5 @@
-import { BusinessCard3D } from './components/BusinessCard3D';
-import './App.css';
+import { BusinessCard3D } from './components/BusinessCard3D'
+import './App.css'
 
 function App() {
   return (
@@ -17,9 +17,8 @@ function App() {
         logo="/company-logo.svg"
         theme="light"
         config={{
-          enableAutoRotate: true,
           autoRotateSpeed: 0.5,
-          rotationSensitivity: 1.5,
+          rotationSensitivity: 1,
         }}
       />
 
@@ -42,7 +41,7 @@ function App() {
         }}
       />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,11 +1,11 @@
-import React from 'react';
-import { ContactInfo } from './ContactInfo';
-import { PersonalInfo } from './PersonalInfo';
-import { CompanyInfo } from './CompanyInfo';
-import { BusinessCardLogo } from './BusinessCardLogo';
-import { BusinessCardDivider } from './BusinessCardDivider';
-import { useBusinessCardTheme } from './hooks/useBusinessCardTheme';
-import type { BusinessCardProps } from './types';
+import React from 'react'
+import { ContactInfo } from './ContactInfo'
+import { PersonalInfo } from './PersonalInfo'
+import { CompanyInfo } from './CompanyInfo'
+import { BusinessCardLogo } from './BusinessCardLogo'
+import { BusinessCardDivider } from './BusinessCardDivider'
+import { useBusinessCardTheme } from './hooks/useBusinessCardTheme'
+import type { BusinessCardProps } from './types'
 
 export const BusinessCard: React.FC<BusinessCardProps> = ({
   name,
@@ -17,21 +17,21 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({
   address,
   website,
   logo,
-  theme = 'light'
+  theme = 'light',
 }) => {
-  const { cardClassName } = useBusinessCardTheme(theme);
+  const { cardClassName } = useBusinessCardTheme(theme)
 
   return (
     <div className={cardClassName}>
       <div className="flex justify-between items-start">
         <div className="flex-1">
-          <PersonalInfo 
-            name={name} 
+          <PersonalInfo
+            name={name}
             title={title}
             theme={theme}
           />
-          <CompanyInfo 
-            company={company} 
+          <CompanyInfo
+            company={company}
             department={department}
             theme={theme}
           />
@@ -39,7 +39,7 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({
         {logo && <BusinessCardLogo logo={logo} />}
       </div>
       <BusinessCardDivider theme={theme} />
-      <ContactInfo 
+      <ContactInfo
         email={email}
         phone={phone}
         address={address}
@@ -47,5 +47,5 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({
         theme={theme}
       />
     </div>
-  );
-};
+  )
+}

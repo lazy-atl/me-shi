@@ -1,1 +1,1 @@
-export * from './BusinessCard3D';
+export * from './BusinessCard3D'

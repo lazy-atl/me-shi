@@ -1,2 +1,2 @@
-export * from './BusinessCard';
-export * from './types';
+export * from './BusinessCard'
+export * from './types'

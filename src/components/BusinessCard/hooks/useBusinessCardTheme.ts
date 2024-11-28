@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import clsx from 'clsx';
-import type { Theme } from '../types';
+import { useMemo } from 'react'
+import clsx from 'clsx'
+import type { Theme } from '../types'
 
 export const useBusinessCardTheme = (theme: Theme) => {
   return useMemo(() => ({
@@ -28,5 +28,5 @@ export const useBusinessCardTheme = (theme: Theme) => {
       'h-px my-4',
       theme === 'light' ? 'bg-gray-200' : 'bg-gray-600'
     )
-  }), [theme]);
-};
+  }), [theme])
+}
